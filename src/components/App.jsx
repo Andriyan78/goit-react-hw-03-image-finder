@@ -4,7 +4,7 @@ import { Container } from './App.styled';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { getImage } from '../components/fetch';
+import { fetchData } from '../components/fetch';
 import { Searchbar } from 'components/Searchbar/Searchbar';
 import { ImageGallery } from 'components/ImageGallery/ImageGallery';
 import { Button } from 'components/Button/Button';
@@ -40,7 +40,7 @@ export class App extends Component {
 
     this.setState({ isLoading: true });
 
-    getImage(query, page, perPage)
+    fetchData(query, page, perPage)
       .then(({ hits, totalHits }) => {
         const totalPages = Math.ceil(totalHits / perPage);
 
