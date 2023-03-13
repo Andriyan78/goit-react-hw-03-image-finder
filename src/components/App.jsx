@@ -5,11 +5,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { fetchData } from '../components/fetch';
-import { Searchbar } from 'components/Searchbar/Searchbar';
-import { ImageGallery } from 'components/ImageGallery/ImageGallery';
-import { Button } from 'components/Button/Button';
-import { Modal } from 'components/Modal/Modal';
-import { Loader } from './Loader/Loader';
+import { Searchbar } from '../components/Searchbar/Searchbar';
+import { ImageGallery } from '../components/ImageGallery/ImageGallery';
+import { Button } from '../components/Button/Button';
+import { Modal } from '../components/Modal/Modal';
+import { Loader } from '../components/Loader/Loader';
 
 import { GlobalStyle } from './GlobalStyles';
 
